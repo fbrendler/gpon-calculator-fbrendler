@@ -1,6 +1,6 @@
 # Calculadora G-PON
 
-Versão 0.70 — by BRENDLER™.
+Versão 0.71 — by BRENDLER™.
 
 Calculadora simples do trajeto entre a NAP e a ONT do cliente. Abra `index.html` em um navegador; o arquivo é autossuficiente e pode ser publicado no Cloudflare Pages.
 
@@ -16,7 +16,7 @@ As perdas dos passivos são fixas e não editáveis: cordão óptico, 1,0–1,6 
 
 ## Relatar problemas
 
-Abra uma issue em https://github.com/fbrendler/gpon-calculator-fbrendler/issues.
+Use o link Relatar problema no rodapé da calculadora ou abra uma issue em https://github.com/fbrendler/gpon-calculator-fbrendler/issues.
 
 ## Publicação no Cloudflare Pages
 
