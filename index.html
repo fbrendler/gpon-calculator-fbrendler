@@ -32,7 +32,7 @@ details>summary{text-align:left}
 <section><h2>Potência estimada no modem</h2><div class="summary"><span>Distância <b id="distanceResult">0,00</b> m</span><span>Perda da fibra <b id="fiberLoss">0,00</b> dB</span><span>Perda do divisor <b id="splitterLoss">0,00</b> dB</span><span>Perda dos passivos <b id="passiveLoss">0,00–0,00</b> dB</span><span>Perda total <b id="totalLoss">0,00</b> dB</span></div>
 <div class="result-card"><strong id="resultTitle">Faixa estimada RX na ONT (1490 nm)</strong><output id="receivedPower" aria-live="polite">0,00 a 0,00</output><small id="resultDescription">Informe a potência e a distância para calcular.</small><p id="standardStatus" class="hint" role="status"></p></div><p id="error" class="error" role="alert"></p><p class="hint">Cálculo: potência na origem − distância (m) × atenuação (dB/m) − perda do divisor − perdas dos passivos. A faixa é exibida do melhor sinal para o pior.</p>
 <button id="clear" type="button">Limpar</button></section>
-<section><details><summary>Faixas de referência G-PON</summary><p class="hint">Arraste as divisórias verticais no cabeçalho para ajustar as colunas. No teclado, foque uma divisória e use ←/→.</p><div style="overflow-x:auto"><table><thead><tr><th>Ponto</th><th>Sinal</th><th>Comprimento de onda</th><th>Faixa informada</th></tr></thead><tbody><tr><td>NAP/DIO</td><td>RX</td><td>1490 nm</td><td>−25 a 0 dBm</td></tr><tr><td>ONT</td><td>RX</td><td>1490 nm</td><td>−27 a −8 dBm</td></tr></tbody></table></div></details></section><footer>by <strong>BRENDLER™</strong> · Versão 0.71 · Downstream: <span id="resultWavelength">1490</span> nm · <a href="https://github.com/fbrendler/gpon-calculator-fbrendler/issues" target="_blank" rel="noopener">Relatar problema</a></footer>
+<section><details><summary>Faixas de referência G-PON</summary><p class="hint">Arraste as divisórias verticais no cabeçalho para ajustar as colunas. No teclado, foque uma divisória e use ←/→.</p><div style="overflow-x:auto"><table><thead><tr><th>Ponto</th><th>Sinal</th><th>Comprimento de onda</th><th>Faixa informada</th></tr></thead><tbody><tr><td>NAP/DIO</td><td>RX</td><td>1490 nm</td><td>−25 a 0 dBm</td></tr><tr><td>ONT</td><td>RX</td><td>1490 nm</td><td>−27 a −8 dBm</td></tr></tbody></table></div></details></section><footer>by <strong>BRENDLER™</strong> · Versão 0.71 · Downstream: <span id="resultWavelength">1490</span> nm <a href="https://github.com/fbrendler/gpon-calculator-fbrendler/issues" target="_blank" rel="noopener">Relatar problema</a></footer>
 </main>
 <script>
 'use strict';
@@ -68,6 +68,8 @@ table{table-layout:fixed}th{position:relative}.column-resizer{position:absolute;
 <style>
 footer a{color:#087e71;font-weight:bold;text-decoration:none}
 footer a:hover,footer a:focus-visible{text-decoration:underline}
+footer a::before{content:"· ";margin-right:2px}
+@media(max-width:430px){footer a{display:block;margin-top:2px}footer a::before{content:""}}
 </style>
 </body>
 </html>
