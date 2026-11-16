@@ -18,6 +18,17 @@ As perdas dos passivos são fixas e não editáveis: cordão óptico, 1,0–1,6 
 
 Use o botão Relatar problema na calculadora ou abra uma issue em https://github.com/fbrendler/calculadora-hfc/issues.
 
+## Publicação no Cloudflare Pages
+
+O site é estático: `index.html` fica na raiz do repositório, sem build e sem dependências. Os passos abaixo refletem essa estrutura.
+
+1. No [Cloudflare Dashboard](https://dash.cloudflare.com/), abra **Workers & Pages → Create application → Pages → Connect to Git**.
+2. Autorize o GitHub e selecione o repositório `fbrendler/gpon-calculator-fbrendler`.
+3. Configure o branch de produção como `main`, o preset como **None** (ou **Static HTML**), o **Build command** vazio e o **Build output directory** como `.` (a raiz do repositório). Não é preciso instalar dependências.
+4. Clique em **Save and Deploy**. O endereço `*.pages.dev` aparece ao final do deploy; novos commits em `main` são publicados automaticamente, e branches e pull requests geram previews próprios.
+
+Depois do primeiro deploy, um domínio próprio pode ser apontado em **Custom domains** dentro do projeto no Cloudflare Pages.
+
 ## Versionamento
 
 Incrementar o número exibido no rodapé em 0.01 a cada solicitação de alteração implementada.
