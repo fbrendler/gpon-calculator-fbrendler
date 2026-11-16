@@ -27,7 +27,7 @@ O site é estático: `index.html` fica na raiz do repositório, sem build e sem 
 3. Configure o branch de produção como `main`, o preset como **None** (ou **Static HTML**), o **Build command** vazio e o **Build output directory** como `.` (a raiz do repositório). Não é preciso instalar dependências.
 4. Clique em **Save and Deploy**. O endereço `*.pages.dev` aparece ao final do deploy; novos commits em `main` são publicados automaticamente, e branches e pull requests geram previews próprios.
 
-Depois do primeiro deploy, um domínio próprio pode ser apontado em **Custom domains** dentro do projeto no Cloudflare Pages.
+Depois do primeiro deploy, um domínio próprio pode ser apontado em **Custom domains** dentro do projeto no Cloudflare Pages. O projeto gpon-calculator-fbrendler está conectado a este repositório, então cada push em `main` publica em https://gpon-calculator-fbrendler.pages.dev automaticamente.
 
 ## Versionamento
 
