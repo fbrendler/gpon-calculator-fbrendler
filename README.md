@@ -16,7 +16,7 @@ As perdas dos passivos são fixas e não editáveis: cordão óptico, 1,0–1,6 
 
 ## Relatar problemas
 
-Use o botão Relatar problema na calculadora ou abra uma issue em https://github.com/fbrendler/calculadora-hfc/issues.
+Abra uma issue em https://github.com/fbrendler/gpon-calculator-fbrendler/issues.
 
 ## Publicação no Cloudflare Pages
 
